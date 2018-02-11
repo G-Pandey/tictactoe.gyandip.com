@@ -1,51 +1,35 @@
 <html !DOCTYPE>
+
 <head>
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./main.css" type="text/css"/>
-    <script src="logic.js" type="application/javascript"></script>
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="main.css" type="text/css" />
+    
+<script type="application/javascript" src="logic.js"></script>
+<script type="application/javascript" src="home.js"></script>
 </head>
-    
-<body onload="setPictures()">
-    
+
+<body>
     <div id="background"></div>
-    
-    <div id="mainContainer">
-        <h1> Tic Tac Toe </h1>
-        
-        <div id="scoreSection">
-            <div id="player1">
-            <h2 style="font-size:.9em">Player 1</h2>
-                <img width="50" height="50" id="player1Image">
+    <div id="mainContainer" style="top:50%">
+        <h1> Welcome to Tic Tac Toe </h1>
+        <div id="mainBox">
+            <h2 style="font-size:.9em">Click button to choose new gifs</h2>
+            <div id="left" class="playerImage">
+
+            <img src="" id="player1Image" width="100" height="100" alt="Player 1 Image" />
+                <button id="player1Button" onclick="getRandomGif(this)" >Player 1</button>
             </div>
-            <div id="message">
-                <h2 id="winner"></h2>
-                <button id="playAgain" onclick="playAgain()">Play Again</button><br>
-                <button id="goHome" onclick="goHome()">Home</button>
+
+            <div id="right" class="playerImage">
+
+            <img src="" id="player2Image" height="100" width="100" alt="Player 1 Image" />
+                <button id="player2Button" onclick="getRandomGif(this)" >Player 2</button>
             </div>
-            
-            <div id="player2">
-            <h2 style="font-size:.9em">Player 2</h2>
-                <img width="50" height="50" id="player2Image">
-            </div>
-        </div>
-        <div class="clear"></div>
-        <h2 id="player"></h2>
-        <div id="row1" class="row">
-            <div id="first" class="box upsizeBorderLeft upsizeBorderTop" data-clicked=false onclick="selectBox(this)"><img id="image1" alt="gameImage" class="boxImage"/></div>
-            <div id="second" class="box upsizeBorderTop" data-clicked=false  onclick="selectBox(this)"><img id="image2" alt="gameImage" class="boxImage"/></div>
-            <div id="third" class="box upsizeBorderTop upsizeBorderRight" data-clicked=false  onclick="selectBox(this)"><img id="image3" alt="gameImage" class="boxImage"/></div>
-        </div>
-        <div id="row2" class="row">
-            <div id="fourth" class="box upsizeBorderLeft" data-clicked=false  onclick="selectBox(this)"><img id="image4" alt="gameImage" class="boxImage"/></div>
-            <div id="fifth" class="box" data-clicked=false  onclick="selectBox(this)"><img id="image5" alt="gameImage" class="boxImage"/></div>
-            <div id="sixth" class="box upsizeBorderRight" data-clicked=false  onclick="selectBox(this)"><img id="image6" alt="gameImage" class="boxImage"/></div>
-        </div>
-        <div id="row3" class="row">
-            <div id="seventh" class="box upsizeBorderLeft upsizeBorderBottom" data-clicked=false  onclick="selectBox(this)"><img id="image7" alt="gameImage" class="boxImage"/></div>
-            <div id="eighth" class="box upsizeBorderBottom" data-clicked=false  onclick="selectBox(this)"><img id="image8" alt="gameImage" class="boxImage"/></div>
-            <div id="ninth" class="box upsizeBorderBottom upsizeBorderRight" data-clicked=false  onclick="selectBox(this)"><img id="image9" alt="gameImage" class="boxImage"/></div>
+            <div></div>
+            <button id="startButton" onclick="startGame()"> Start </button>
+
         </div>
     </div>
-    
+
 </body>
 </html>

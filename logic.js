@@ -213,7 +213,7 @@
 
         function goHome(){
             sessionStorage.clear();
-            location.href = './home.html';
+            location.href = './index.html';
         }
 
 
@@ -271,7 +271,7 @@ function getRandomGif(elem){
 }
 
 function startGame() {
-    window.location.href = './index.html';
+    window.location.href = './game.html';
     console.log("Redirecting")
 }
 
