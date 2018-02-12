@@ -18,10 +18,8 @@ Game Page
 
 #mainContainer{
     position:absolute;
-    width:500px;
-    height:500px;
     left:50%;
-    top:30%;
+    top:50%;
     margin:0;
     transform:translate(-50%, -50%);
     text-align: center;
@@ -32,7 +30,7 @@ Game Page
 }
 
 #mainContainer .box{
-    height:165px;
+    height:145px;
     width:165px;
     border:5px solid black;
    
